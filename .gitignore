@@ -1,1 +1,6 @@
 .env
+.DS_Store
+/storage/logs/
+/storage/framework/sessions/
+/storage/framework/views/
+/storage/framework/cache/
