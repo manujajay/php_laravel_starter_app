@@ -89,8 +89,10 @@ DB_PASSWORD=your_password
 
 ### Interacting with the Database
 
-- Eloquent is Laravel's ORM and provides an easy way to interact with your database.
+- Eloquent is Laravel's built-in Object-Relational Mapping (ORM) tool, which means it is already included as part of the Laravel framework. There's no need to download or install anything extra if you're using Laravel. 
+- Eloquent provides a simple, elegant syntax for interacting with your database (via just php code).
 - After creating a model, you can use it to query the database in your controllers or other parts of your application.
+
 
 #### Retrieving Data
 
