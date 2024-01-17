@@ -5,7 +5,7 @@ This repository contains the PHP Laravel Starter Application. It provides a basi
 ## Table of Contents
 - [Initial Setup](#initial-setup)
 - [Using This Repository](#using-this-repository)
-- [Working with Models and Databases](#working-with-models-and-databases)
+- [Working with Models and Databases](#working-with-models-and-databases-optional)
 - [Testing the Application](#testing-the-application)
 - [Troubleshooting](#troubleshooting)
 - [Further Information](#further-information)
@@ -69,13 +69,14 @@ If you're cloning this repository:
 
 - Update your `.env` file with your database credentials:
 
+```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=your_database
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
-
+```
 
 ### Creating a Model
 
