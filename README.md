@@ -2,8 +2,15 @@
 
 This repository contains the PHP Laravel Starter Application. It provides a basic setup for a Laravel web application, including routing, views, controllers, models, and database interactions. Follow the instructions below to set up the project.
 
-## Initial Setup
+## Table of Contents
+- [Initial Setup](#initial-setup)
+- [Using This Repository](#using-this-repository)
+- [Working with Models and Databases](#working-with-models-and-databases)
+- [Testing the Application](#testing-the-application)
+- [Troubleshooting](#troubleshooting)
+- [Further Information](#further-information)
 
+## Initial Setup
 If you're setting up a new Laravel project from scratch, follow these steps:
 
 ### Step 1: Install Composer
@@ -109,6 +116,33 @@ DB_PASSWORD=your_password
   $yourModel->save();
   ```
 
+#### Updating Data
+
+- Retrieve the model, change the attributes, and call `save()`:
+
+  ```php
+    $yourModel = YourModel::find($id);
+    $yourModel->name = 'New Name';
+    $yourModel->save();
+  ```
+
+#### Deleting Data
+
+- Retrieve the model and call `delete()`:
+
+  ```php
+    $yourModel = YourModel::find($id);
+    $yourModel->delete();
+  ```
+
+#### Eloquent Relationships
+
+- Define relationships in your Eloquent models (e.g., `hasOne`, `hasMany`, `belongsTo`) to interact with related data across different tables.
+
+  ```php
+    $yourModel = YourModel::find($id);
+    $yourModel->delete();
+  ```
 
 ## Testing the Application
 
